@@ -76,13 +76,15 @@
             <p class="uppertitle dark">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="hero-subtitle">
-              Мы эксперты в модных мужских стрижках.<br>Работаем быстро, осторожно
-              и со вкусом.
+              Мы эксперты в модных мужских стрижках.<br />Работаем быстро,
+              осторожно и со вкусом.
             </p>
           </div>
           <ul class="list">
             <li class="item">
-              <button class="slider-btn" type="button">Назад</button>
+              <button class="slider-btn slider-btn-disable" type="button">
+                Назад
+              </button>
             </li>
             <li class="item">
               <button class="slider-btn" type="button">Вперед</button>
@@ -140,7 +142,27 @@
             Проведи время в компании лучших мастеров
           </p>
           <h2 class="title">Услуги и цены</h2>
-          <div class="price-group">
+          <ul class="price-list">
+            <li class="item">
+              <ul class="inner-list left">
+                <li class="inner-item">Мужская стрижка от 300 грн.</li>
+                <li class="inner-item">Стрижка бороды от 200 грн.</li>
+                <li class="inner-item">Стрижка усов от 200 грн.</li>
+                <li class="inner-item">Бритье опасной бритвой от 200 грн.</li>
+              </ul>
+            </li>
+            <li class="item">
+              <ul class="inner-list right">
+                <li class="inner-item">Cтрижка у стажера от 50 грн.</li>
+                <li class="inner-item">Стрижка под насадку от 200 грн.</li>
+                <li class="inner-item">
+                  Детская стрижка (до 12 лет) от 300 грн.
+                </li>
+                <li class="inner-item">Камуфлирование седины от 200 грн.</li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <div class="price-group">
             <ul class="left list">
               <li class="item">Мужская стрижка от 300 грн.</li>
               <li class="item">Стрижка бороды от 200 грн.</li>
@@ -153,7 +175,7 @@
               <li class="item">Детская стрижка (до 12 лет) от 300 грн.</li>
               <li class="item">Камуфлирование седины от 200 грн.</li>
             </ul>
-          </div>
+          </div> -->
           <button class="price btn" type="button">онлайн-запись</button>
         </div>
       </section>
@@ -163,27 +185,19 @@
         <div class="container features-container">
           <ul class="list">
             <li class="item">
-              <p class="uppertext">
-                600<sup><span class="plus">+</span></sup>
-              </p>
+              <p class="uppertext">600<sup class="plus">+</sup></p>
               <p class="subtext">Довольных клиентов в день</p>
             </li>
             <li class="item">
-              <p class="uppertext">
-                50<sup><span class="plus">+</span></sup>
-              </p>
+              <p class="uppertext">50<sup class="plus">+</sup></p>
               <p class="subtext">Наград за отличный сервис</p>
             </li>
             <li class="item">
-              <p class="uppertext">
-                20<sup><span class="plus">+</span></sup>
-              </p>
+              <p class="uppertext">20<sup class="plus">+</sup></p>
               <p class="subtext">Лучших мастеров Киева</p>
             </li>
             <li class="item">
-              <p class="uppertext">
-                100<sup><span class="plus">+</span></sup>
-              </p>
+              <p class="uppertext">100<sup class="plus">+</sup></p>
               <p class="subtext">Подарков постоянным клиентам</p>
             </li>
           </ul>
@@ -205,7 +219,7 @@
           <h2 class="title">Наши мастера</h2>
           <ul class="list">
             <li class="item">
-              <img
+              <img class="team-photo"
                 src="./images/team/img-1.jpg"
                 width="370"
                 alt="мастер John Smith"
@@ -236,7 +250,7 @@
               </ul>
             </li>
             <li class="item">
-              <img
+              <img class="team-photo"
                 src="./images/team/img-2.jpg"
                 width="370"
                 alt="мастер Michele Doe"
@@ -267,7 +281,7 @@
               </ul>
             </li>
             <li class="item">
-              <img
+              <img class="team-photo"
                 src="./images/team/img-3.jpg"
                 width="370"
                 alt="мастер Alan Black"
@@ -310,28 +324,28 @@
           </p>
           <ul class="list">
             <li class="item">
-              <img
+              <img class="example-photo"
                 src="./images/work-examples/example-1.jpg"
                 width="270"
                 alt="Подстригает волосы"
               />
             </li>
             <li class="item">
-              <img
+              <img class="example-photo"
                 src="./images/work-examples/example-2.jpg"
                 width="270"
                 alt="Мажет бороду помазком"
               />
             </li>
             <li class="item">
-              <img
+              <img class="example-photo"
                 src="./images/work-examples/example-3.jpg"
                 width="270"
                 alt="Отпаривает лицо полотенцем"
               />
             </li>
             <li class="item">
-              <img
+              <img class="example-photo"
                 src="./images/work-examples/example-4.jpg"
                 width="270"
                 alt="Подравнивает прическу сзади"
@@ -352,10 +366,10 @@
               <h2 class="title">Контакты</h2>
               <address class="address">ул. Васильковая, 7А Киев, 08132</address>
               <ul class="list">
-                <li class="item">
+                <li class="item phone">
                   <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
                 </li>
-                <li class="item">
+                <li class="item mail">
                   <a class="mail link" href="mailto:barbershop@email.com"
                     >barbershop@email.com</a
                   >
