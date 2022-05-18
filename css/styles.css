@@ -35,11 +35,40 @@ a {
 }
 
 .header {
-  background-color: rgb(184, 175, 175);
+  background-color: rgb(45, 43, 43);
 }
 
 .section {
-  background-color: grey;
+  outline: 1px solid yellow;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.container {
+  outline: 1px solid red;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 71px;
+}
+
+.navigation .list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .navigation .link,
@@ -50,9 +79,20 @@ a {
   color: var(--white-text-color);
 }
 
+.header-group {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-group .link {
+  margin-right: 40px;
+}
+
 .btn {
-  width: 160px;
-  height: 40px;
+  max-width: 200px;
+  min-width: 160px;
+  min-height: 40px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   font-family: inherit;
@@ -63,7 +103,23 @@ a {
   text-transform: uppercase;
   color: var(--white-text-color);
   padding: 12 20;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
   cursor: pointer;
+}
+
+.about .btn,
+.price .btn {
+  color: var(--primary-text-color);
+}
+
+.hero {
+  background-color: rgb(45, 43, 43);
+}
+
+.hero-container {
+  height: 680px;
 }
 
 .hero .link,
@@ -74,6 +130,27 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+}
+
+.about-wrap {
+  display: flex;
+}
+
+.about .list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.dspl-block {
+  display: block;
+}
+
+.about-group {
+  width: 500px;
 }
 
 .uppertitle {
@@ -205,12 +282,12 @@ a {
   color: var(--white-text-color);
 }
 
-.address, 
+.address,
 .contacts .link {
-font-style: normal;
-font-size: 18px;
-line-height: 1.67;
-color: #9DA4BD;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #9da4bd;
 }
 
 .contacts .mail {
@@ -222,7 +299,7 @@ color: #9DA4BD;
 }
 
 .footer .text {
-font-size: 11px;
-line-height: 1.36;
-color: #9DA4BD;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #9da4bd;
 }
